@@ -20,7 +20,7 @@
   let selectedId = null;
   let searchTimer = null;
   let displayScale = 1;
-  let treeOrientation = 'vertical';
+  let treeOrientation = 'horizontal';
 
   function childrenOf(person) {
     if (person.id === 'nair') return byId.get('jose-leandro').children.map(id => byId.get(id));

@@ -23,7 +23,7 @@
         <label class="search" for="searchInput"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Buscar qualquer pessoa..." autocomplete="off" aria-describedby="searchSummary"><button id="clearSearch" type="button" aria-label="Limpar busca">×</button></label>
       </div>
       <div class="toolbar-actions">
-        <div id="orientationControls" class="view-switch" role="group" aria-label="Orientação da árvore"><button id="treeVertical" class="secondary active" type="button" aria-pressed="true">Vertical</button><button id="treeHorizontal" class="secondary" type="button" aria-pressed="false">Horizontal</button></div>
+        <div id="orientationControls" class="view-switch" role="group" aria-label="Orientação da árvore"><button id="treeVertical" class="secondary" type="button" aria-pressed="false">Vertical</button><button id="treeHorizontal" class="secondary active" type="button" aria-pressed="true">Horizontal</button></div>
         <div class="text-size" aria-label="Tamanho dos cartões"><button id="smallerText" type="button" title="Diminuir texto" aria-label="Diminuir texto">A−</button><button id="largerText" type="button" title="Aumentar texto" aria-label="Aumentar texto">A+</button></div>
         <button id="topBtn" class="secondary" type="button">Início</button>
         <button id="exportSvg" class="secondary" type="button">Exportar SVG</button>
@@ -39,7 +39,7 @@
 
     <div id="searchSummary" class="search-summary" aria-live="polite"></div>
     <div id="searchResults" class="search-results" aria-live="polite"></div>
-    <section id="treeViewport" class="tree-viewport" aria-label="Árvore vertical: gerações dos ancestrais aos descendentes">
+    <section id="treeViewport" class="tree-viewport" aria-label="Árvore horizontal: ancestrais à esquerda e descendentes à direita">
       <div id="treeHost"></div>
     </section>
     <section id="generationBoard" class="generation-board" aria-label="Árvore completa por geração"></section>
